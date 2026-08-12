@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Studio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #111827;
+    }
+
+    nav h2 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero h1 {
+      font-size: 65px;
+      margin-bottom: 20px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      color: #cbd5e1;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      background: white;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      padding: 60px 8%;
+      background: #111827;
+    }
+
+    .card {
+      background: #1e293b;
+      width: 280px;
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>NOVA</h2>
+
+    <div>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>Build Something <span>Different.</span></h1>
+
+      <p>
+        Nova Studio creates modern websites, digital experiences,
+        and creative ideas for businesses that want to stand out.
+      </p>
+
+      <a href="#services" class="btn">Explore</a>
+    </div>
+  </section>
+
+  <section class="cards" id="services">
+
+    <div class="card">
+      <h3>Web Design</h3>
+      <p>
+        Modern and responsive websites that look great on phones,
+        tablets and computers.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Branding</h3>
+      <p>
+        Clean logos, colours and designs to give your business
+        its own style.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Development</h3>
+      <p>
+        Fast and functional websites built using modern web
+        technologies.
+      </p>
+    </div>
+
+  </section>
+
+  <footer id="contact">
+    © 2026 Nova Studio
+  </footer>
+
+</body>
+</html>
